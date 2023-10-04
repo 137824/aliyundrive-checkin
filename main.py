@@ -41,7 +41,7 @@ def main():
     title = '阿里云盘签到结果'
     message_all = '\n'.join(message_all)
     message_all = re.sub('\n+', '\n', message_all).rstrip('\n')
-
+    print(message_all)
     message_send = MessageSend()
     message_send.send_all(message_tokens, title, message_all)
 
